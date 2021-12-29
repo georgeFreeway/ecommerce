@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900">
+    <nav class="flex items-center bg-indigo-800 p-4 flex-wrap justify-between">
+        <a href="/" class="text-2xl text-gray-200 font-bold">shopper.com</a>
+        <button class="inline-flex hover:bg-gray-900 rounded-md lg:hidden ml-auto" id="button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <div class="hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="menu">
+            <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col">
+                    <a href="/" class="text-gray-300 font-bold px-3 py-2 hover:text-white hover:bg-gray-900 rounded-md">
+                        <span>men</span>
+                    </a>
+                    <a href="/" class="text-gray-300 font-bold px-3 py-2 hover:text-white hover:bg-gray-900 rounded-md"> 
+                        <span>shoes</span>
+                    </a>
+                    <a href="/" class="text-gray-300 font-bold px-3 py-2 hover:text-white hover:bg-gray-900 rounded-md">
+                        <span>kids</span>
+                    </a>
+                    <a href="/" class="text-gray-300 font-bold px-3 py-2 hover:text-white hover:bg-gray-900 rounded-md">
+                        <span>women</span>
+                    </a>
+                    <a href="/" class="text-gray-300 font-bold px-3 py-2 hover:text-white hover:bg-gray-900 rounded-md">
+                        <span>unisex</span>
+                    </a>
+
+                    <!---darkmode-->
+                    <div class="flex items-center spacing-x-2 lg:ml-6 sm:mt-1">
+                        <span class="text-sm text-gray-800 dark:text-gray-100">Light</span>
+                            <div>
+                                <input type="checkbox" id="toggle" class="hidden">
+                                <label for="toggle">
+                                <div class="w-9 h-5 flex items-center bg-green-300 rounded-full p-1">
+                                    <div class="toggle-dot w-4 h-4 bg-white rounded-full shadow-md transform duration-500 ease-in-out"></div>
+                                </div>
+                                </label>
+                            </div>
+                        <span class="text-sm text-gray-400">Dark</span>
+                    </div>
+            </div>
+        </div>
+    </nav><!---end of nav-->
+
+
+    <script src="index.js"></script>
+</body>
+</html>
